@@ -1,0 +1,44 @@
+// Slideshow
+
+// Importados
+@import "variables.less";
+
+#slideshow_padre {
+	.slides_container {
+		// Contenedor que contiene todas las filminas
+		width: 496px;
+		height: 280px;
+		overflow: hidden;
+		position: relative;
+		
+		div {
+			// Cada una de las filminas
+			height: 280px;
+			display: block;
+			
+			//Para si meten filminas de texto
+			h1 {
+				font: @verd18;
+				color: @azul_masoscuro;
+				margin-top: 2px;
+				magin-bottom: 2p;
+				padding-top: 2px;
+				padding-bottom: 2px;
+			}
+			
+			p {
+				font: @arial12;
+				magin-bottom: 2px;
+			}
+		}
+	}
+	
+	.pagination {
+		position: relative;
+		right: 10px;
+		margin: 8px 0 0 auto;
+		width: (496px - 6px);
+		text-align: right;
+	}
+	
+}

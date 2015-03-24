@@ -1,0 +1,178 @@
+// Generico de todas las paginas
+
+// Importados
+@import "variables.less";
+
+// Estilos que se aplican a toda la web
+body {
+	width: @tamanyo_total;
+	margin: 3px auto 0;
+	padding: 0;
+}
+
+ul {
+	margin: @cero;
+	padding: @cero;
+	list-style-type: none;
+}
+
+ol {
+	
+}
+
+img {
+	a {
+		border-style: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: @azul_masoscuro;
+	
+	&:hover {
+		texto-decoration: none;
+	}
+}
+
+@import "nav.less";
+
+// Contenedor principal
+section, #section {
+	margin-top: 3px;
+
+	.laseccion(@630);
+
+	#titulo_pag {
+		width: @802;
+		color: @azul_uva;
+		font: bold @helv16;
+		padding-bottom: 3px;
+		padding-left: 5px;
+		margin-bottom: 7px;
+		margin-top: 2px;
+		background: url(../images/linea_titulo.jpg) no-repeat 0 100%;
+		text-transform: uppercase;
+		
+		h1 {
+			font: bold @helv16;
+			margin-bottom: 2px;
+		}
+	}
+	
+	.texto_seccion a {
+		color: @azul_masoscuro;
+		padding-right: 10px;
+		background: url(../images/externo8x8.png) no-repeat right center;
+		
+		&:hover {
+			color: @azul_claro3;
+		}
+	}
+	
+	li:hover>a {
+		color: @azul_masoscuro;
+	}
+}
+
+// Article
+article, #article {
+	width: @620;
+	float: left;
+	
+	&>header {
+		.limpiador();
+	}
+	
+	&>header h1 {
+		font: @arial16;
+	}
+	
+	&>header h2 {
+		font: @arial14;
+		padding-bottom: 2px;
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	.ladillo {
+		color: @azul_uva;
+		font: @arial12;
+		padding-left: 8px;
+	}
+}
+
+#menu_3col, #rightcontainer {
+	width: @150;
+	display: block;
+	margin-top: 40px;
+	padding: 0 5px 0 8px;
+	color: @negro;
+	font: @arial12;
+	border-left: 1px dotted @rosa_uva;
+	float: right;
+	
+	h1 {
+		margin-bottom: 5px;
+        background-color: #e9f6fe;
+        padding: 3px 8px;
+        color: #727272;
+        font: normal small-caps @helv12;
+	}
+	
+	li {
+		list-style-type: none;
+        color: @blanco;
+		
+		a {
+			font: normal small-caps @helv12;
+			
+			&:hover {
+				color: @azul_uva;
+			}
+		}
+		
+		&:hover {
+			color: @azul_uva;
+		}
+	}
+}
+
+// Definicion de los contenedores
+#leftcontainer {
+	display: block;
+	width: @178;
+	margin-left: 5px;
+	float: left;
+}
+
+#centercontainer, #centerallcontainer {
+	display: block;
+	width: @610;
+	float: left;
+	margin-top: 2px;
+}
+
+#centerandrightcontainer {
+	display: block;
+	float: right;
+	width: @820;
+	margin-top: 2px;
+}
+
+#leftandcentercontainer {
+	display: block;
+	width: @820;
+	float: right;
+}
+
+// Informacion cargada por
+#cargada_por {
+	color: @gris_oscuro;
+	width: @810;
+	padding: 5px;
+	margin-left: 100px;
+	margin-top: 5px;
+	font: @helv12;
+	background: @azul_claro3;
+}

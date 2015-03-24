@@ -1,0 +1,53 @@
+// Estilos para las secundarias
+
+// Importados
+@import "variables.less";
+
+// Definicion de las seccion
+// Limpieza
+section, article, #section, #article {
+	width: auto;
+	height: auto;
+}
+
+section, #section {
+	float: right;
+	padding-left: 10px;
+	text-align: center;
+	margin-top: 5px;
+	border-left: 1px solid @gris_uva;
+}
+
+article, #article {
+	width: @610;
+	float: right;
+}
+
+// Contenedor central
+#centerandrightcontainer {
+        width: 755px; /*(116+8)*6-1*/
+        float: right;
+        height: auto;
+        min-height: 100px;
+        margin-top: 0px;
+}
+
+#central {
+        width: 550px;
+        padding: 10px;
+        font: 12px Arial;
+        margin-top: -15px;
+        margin-bottom: 5px;
+}
+
+// Definicion de las imagenes y sus contenedores
+// Esto es un poco chapuza... pero vamos...
+#imagen_seccion, #imagenes_grupo, section .imagenes, #section .imagenes {
+        float: left;
+        margin-right: 0;
+        margin-left: -10px;
+        padding: 0;
+        margin-top: -2px;
+        width: 62px;
+        height: 540px;
+}

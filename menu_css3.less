@@ -1,0 +1,141 @@
+// Menu de la izquierda
+// Variables
+@177: 177px;
+
+@azul_oscuro: #005078;
+@blanco: #fff;
+
+aside, #aside {
+	width: @177;
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin-right: 5px;
+}
+
+li {
+	&>a {
+		color: @azul_oscuro;
+	}
+	
+	&[class="out"]{
+		&>a {
+        	color: @azul_oscuro;
+		}
+	}
+	&:hover>a {
+        color: @blanco;
+	}
+}
+
+// Las cosas finales
+.lI_class_final() {
+	border-right: 3px solid #005d8c;
+    background-color: #fff;
+}
+
+.nivel1 {
+	margin-left: 4px;
+	width: (@177 - 6);
+	padding-top: 4px;
+	padding-bottom: 4px;
+	text-align: left;
+	
+	li:hover {
+		background-color: @azul_oscuro;
+	}
+	
+	li[class="final"] {
+		&:hover {
+			.lI_class_final;	
+		}
+	}
+}
+
+.nivel2 {
+	
+	li[class="final"] {
+		&:hover {
+			.lI_class_final;	
+			
+			&a, &>a {
+				color: @azul_oscuro;	
+			}
+		}
+	}
+}
+
+.nivel3 {
+	
+	li[class="final"] {
+		&:hover {
+			.lI_class_final;	
+		}
+	}
+}
+
+.nivel1_grados {
+}
+
+.nivel2_grados {
+	
+	li[class="final"] {
+		&:hover {
+			.lI_class_final;	
+		}
+	}
+	
+	ul {
+		&>li {
+			&:hover {
+				color: @blanco;
+			}
+		}
+	}
+}
+
+.nivel3_grados {
+	
+	li[class="final"] {
+		&:hover {
+			.lI_class_final;	
+			
+			&>a {
+				color: @azul_oscuro;
+			}
+		}
+	}
+	
+	ul {
+		&>li {
+			&:hover {
+				color: @blanco;
+			}
+			
+			&[class="final"] {
+				&:hover {
+					&>a {
+						background-color: @blanco;
+					}
+				}
+			}
+		}
+		
+	}
+}
+
+.nivel4_grados {
+	ul {
+		&>li {
+			
+			&[class="final"] {
+				&:hover {
+					&>a {
+						background-color: @blanco;
+					}
+				}
+			}
+		}
+		
+	}
+}

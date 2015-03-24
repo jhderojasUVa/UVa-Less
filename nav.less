@@ -1,0 +1,34 @@
+// Navegacion
+
+// Importados
+@import "variables.less";
+
+// Estilos que se aplican solo a la navegacion horizontal bajo la cabecera
+nav, #nav {
+	width: @tamanyo_total;
+	height: 27px;
+	color: @azul_uva;
+	text-align: center;
+	font: @arial15;
+	border-bottom: 1px solid @azul_uva;
+	margin-bottom: 10px;
+	
+	ul {
+		padding: @cero;
+		margin: 5px 0;
+		display: inline-block;
+		vertical-align: middle;
+		
+		li {
+			list-style-type: none;
+			padding-right: 9px;
+			padding-left: 6px;
+			float: left;
+			text-transform: uppercase;
+			
+			&:hover, a:hover {
+				color: @azul_uva;
+			}
+		}
+	}
+}

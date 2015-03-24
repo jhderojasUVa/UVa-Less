@@ -1,0 +1,239 @@
+// Portada UVa - Less version
+
+// Importados
+@import "variables.less";
+
+// Totales
+// Estilos que se aplican a toda la web
+body {
+	width: @tamanyo_total;
+	margin: 3px auto 0;
+	padding: 0;
+}
+
+ul {
+	margin: @cero;
+	padding: @cero;
+	list-style-type: none;
+}
+
+img {
+	a {
+		border-style: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: @azul_masoscuro;
+	
+	&:hover {
+		texto-decoration: none;
+	}
+}
+
+@import "nav.less";
+
+// Contenedores principales de la portada
+#contenedor_col_izq {
+	width: 685px;
+    margin-right: 8px;
+	float: left;
+    margin-bottom: 8px;
+	
+	#leftcontainer {
+		float: left;
+		width: @181;;
+		height: @307;
+		margin-right: 8px;
+		
+		a img {
+			border-style: none;
+		}
+		
+		img {
+			width: @181;
+			height: 58px;
+		}
+	}
+	
+	#slideshow_padre {
+		width: 496px;
+        height: @307;
+        float: right;
+	}
+}
+
+#contenedor_col_drcha {
+        width: 304px;
+        float: right;
+        text-align: center;
+		
+		#rightcontainer {
+			.banner {
+				a {
+					img {
+						border-style: none;
+					}
+				}
+			}
+		}
+		
+		// Banner de la columna de la derecha, especificacion
+		#banner {
+			width: @307;
+			margin-top: 5px;
+			border-style: none;
+		}
+}
+
+// Acessos directos
+#acceso_directo {
+	color: @azul_oscuro;
+	font: @arial12;
+	width: @307;
+	text-align: left;
+	overflow: hidden;
+	
+	.acceso {
+		padding-left: 3px;
+		padding-right: 3px;
+		border-right: 1px none @azul_oscuro;
+	}
+	
+	a {
+		color: @azul_masoscuro;
+		text-decoration: underline;
+		-moz-transition: all 5s ease-in-out;
+        -webkit-transition: all 5s ease-in-out;
+        transition: all 5s ease-in-out;
+		
+		&:hover {
+			color: @rojo;
+			text-decoration: none;
+			-moz-transition: all 0.6s ease-in-out;
+			-webkit-transition: all 0.6s ease-in-out;
+			transition: all 0.6s ease-in-out;
+		}
+	}
+}
+
+// Banner, principalmente para el lateral derecho
+#banner {
+	width: (@307 - 3);
+	margin-top: 5px;
+	border-style: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#separador {
+	width: (@307 - 3);
+	height: 7px;
+}
+
+// Botones de la portada, tamaño especial
+.botones {
+	width: (@307 - 3);
+	height: 16px; // 1 linea
+	margin-top: 4px;
+	background: @azul_masoscuro;
+	text-transform: uppercase;
+	text-align: right;
+	font: @arial12;
+	color: @blanco;
+	padding-right: 4px;
+	padding-left: 2px;
+	
+	a {
+		color: @blanco;
+	}
+}
+
+// Novedades editoriales
+#novedades_editoriales {
+	width: (@307 - 3);
+	height: 197px;
+	background-color: @azul_claro;
+}
+
+// Patrocinadores
+#patrocinadores {
+	text-align: center;
+	
+	&:before {
+		content: '';
+		display: inner-block;
+		width: 100%;
+		vertical-align: middle;
+		margin-right: -0.25em;
+	}
+	
+	#cebterallcontainer {
+		div {
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 5px;
+	        padding-right: 5px;
+			
+			p {
+				font: @arial9;
+				display: none;
+			}
+		}
+	}
+}
+
+// Paginacion para todos los slideshow
+.pagination {
+        margin: 10px auto 0;
+        width: 100px;
+}
+
+// Noticias y Becas
+#noticias {
+	width: 685px;
+	margin-bottom: 5px;
+	padding: 0;
+	margin-top: 10px;
+	
+	h1 {
+		margin-bottom: -10px;
+		margin-top: -15px;
+		
+		&>.noticia {
+			color: @azul_masoscuro;
+			font: bold @arial12;
+			background-color: @azul_claro2;
+			padding-right: 4px;
+			padding-left: 4px;
+		}
+	}
+	
+	p {
+		font: @arial12;
+		color: @azul_masoscuro;
+		margin-right: 4px;
+		margin-top: 2px;
+		margin-left: 4px;
+		
+		&>.fecha {
+			font: @arial10;
+		}
+		
+		&>.texto {
+			color: @rojo_uva;
+			margin-top: -10px;
+		}
+	}
+}
+
+.imagen {
+    padding-bottom: 4px;
+}
+
+// Limpiadores
+#clear, .clear {
+	float: none;
+	clear: both;
+}

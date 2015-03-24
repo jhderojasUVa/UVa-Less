@@ -1,0 +1,116 @@
+// Variables
+@tamanyo_total: 1000px;
+@830: 830px;
+@820: 820px;
+@810: 810px;
+@802: 802px;
+@630: 630px;
+@620: 620px;
+@610: 610px;
+@181: 181px;
+@178: 178px;
+@150: 150px;
+@307: 307px;
+@cero: 0px;
+
+@arial18: 18px Arial;
+@arial16: 16px Arial;
+@arial15: 15px Arial;
+@arial14: 14px Arial;
+@arial12: 12px Arial;
+@arial10: 10px Arial;
+@arial9: 9px Arial;
+
+@helv16: 16px Helvetica, Arial;
+@helv12: 12px Helvetica, Arial;
+
+@verd18: 18px Verdana, Helvetica, Arial;
+
+@azul_uva: #4780ad;
+@azul_claro: #f2f6f9;
+@azul_claro2: #eaf6fd;
+@azul_claro3: #ec275d;
+@azul_borde: #03b2d1;
+@azul_oscuro: #095179;
+@azul_masoscuro: #005d8c;
+@rojo: #ec275d;
+@rojo_uva: #982085;
+@rosa_uva: #eb3b8c;
+@gris_uva: #666;
+@gris_claro: #03b2d1;
+@gris_oscuro: #4b4b4d;
+@gris: #ddd;
+@blanco: #fff;
+@negro: #000;
+
+// Funciones
+
+.laseccion (@tamanyo) {
+	width: @tamanyo;
+	display: block;
+	float: left;
+	padding-left: 10px;
+	border-left: 1px solid @gris;
+}
+
+.limpiador () {
+	width: auto;
+	height: auto;
+	border-style: none;
+	padding: 0;
+	margin: 0;
+	background-image: none;
+}
+
+// De uso comun
+
+#clear, .clear {
+	float: none;
+    clear: both
+}
+
+h2 {
+        font: bold @arial16;
+}
+
+.subtitulo h2 {
+        width: 320px;
+        font: @arial16;
+        background-color: @azul_claro2;
+        color: @gris_uva;
+        padding-left: 4px;
+        padding-right: 5px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+}
+
+
+h3 {
+        font: @arial14;
+        padding-left: 3px;
+}
+
+h4 {
+        font: bold @arial14;
+        padding-left: 3px;
+}
+
+h5 {
+        font: bold @arial12;
+        padding-left: 5px;
+}
+
+h6 {
+        font: italic  @arial12;
+        padding-left: 5px;
+}
+
+h7 {
+        font: italic bold  @arial12;
+        padding-left: 5px;
+}
+
+// Limpieza de los bordes de imagenes en navegadores mas viejos que la tarara
+img a {
+	border: none;
+}

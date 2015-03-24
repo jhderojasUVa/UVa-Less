@@ -1,0 +1,96 @@
+// Pie, formato estandar
+
+// Importados
+@import "variables.less";
+
+// Definicion principal
+#footer {
+	width: @tamanyo_total;
+	margin-top: 15px;
+	font: @arial12;
+	text-align: center;
+	border-top: 1px solid @azul_borde;
+	margin-bottom: 5px;
+	background-color: @gris_claro;
+	
+	#grupo_col_izq {
+		width: @830;
+		display: block;
+		float: left;
+		
+		#col {
+			float: right;
+			min-width: @181;
+			max-width: 750px;
+			width: auto;
+			font-family: Arial;
+			text-transform: uppercase;
+			text-align: left;
+			padding-left: 9px;
+			padding-right: 9px;
+			display: block;
+			
+			h1 {
+				padding-left: 10px;
+				font-size: 12px;
+			}
+			
+			ul {
+				padding-left: 10px;
+				border-left: 1px solid @azul_oscuro;
+				
+				li {
+					list-style-type: none;
+					padding-bottom: 5px;
+				}
+			}
+			
+			// Formulario de envio
+			input {
+				
+				&.caja {
+					padding: 3px;
+					border: 1px solid #blanco;
+				}
+				
+				&.enviar {
+					padding: 3px 5px 3px 22px;
+					border: none;
+					text-transform: uppercase;
+					color: @blanco;
+					background: @azul_uva url(/opencms/export/system/modules/es.uva.web.portal.opencms.v85.template/resources/images/email.png) no-repeat 4px 5px;
+				}
+			}
+			
+			// Definiciones estandar
+			
+			a {
+				color: @azul_uva;
+				text-decoration: none;
+				
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	#col_uva {
+		text-align: center;
+		position: relative;
+		float: left;
+		font: @arial10;
+		
+		p {
+			margin-bottom: -5px;
+		}
+	}
+	
+	#inferior {
+		width: @tamanyo_total;
+		font: @arial10;
+		color: @negro;
+		text-align: right;
+		text-transform: lowecase;
+	}
+}
